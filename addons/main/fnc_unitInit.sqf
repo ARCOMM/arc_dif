@@ -18,10 +18,10 @@ if (!local _unit) exitWith {};
 // Init unit
 if (
 	GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]} && {!(_unit getVariable [QGVAR(initialized), false])}) then {
-	LOG_1("Setting AI skills on unit", _unit);
+	LOG_1("Setting AI skills on unit",_unit);
 
 	{
-		TRACE_2("Setting skill on unit", (_x # 0), (_x # 1));
+		TRACE_2("Setting skill on unit",(_x # 0),(_x # 1));
 
 		private _randomModifier = 1 - random GVAR(randomSkill) + random GVAR(randomSkill);
 		_unit setSkill [_x # 0, (_x # 1) * _randomModifier];

@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 
-#include "XEH_PREP.sqf"
-#include "initSettings.sqf"
+#include "XEH_PREP.sqf.inc"
+#include "initSettings.sqf.inc"
+
 ["CBA_settingsInitialized", {
 	LOG("Settings initialized, enabling systems");
 
